@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    </head>
+    <body>
+        <div class = "login">  
+            <h1>Faça seu login</h1>
+            <form>
+                <p>Usuário</p>
+                <input type="text" name="usuario" placeholder="Digite o nome de usuário">
+                <p>Senha</p>
+                <input type="password" name="senha" placeholder="Digite sua senha">
+                <input type="submit" name="butao" placeholder="Login"><br>
+                <a href="#">Não lembra sua senha?</a><br>
+                <a href="#">Não possui conta? </a>
+                
+            </form>
+        </div>
+    </body>
+    
+</html>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-size: cover;
+            font-family: sans-serif
+        }
+        
+        .login{
+            width: 320px;
+            height: 420px;
+            border: 3px solid red;
+            border-radius: 80px 0px 80px 0px;
+            color: black;
+            background-color: rgba (0,0,7,1.5);
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px
+            
+            
+             
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+            padding-left: 15px;
+            padding-top:  0;
+            padding-bottom: 35px;
+            color: grey;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            font-weight: bolder;
+        }
+        .usuario{
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 120px;
+            letter-spacing: 40px;
+            text-align: center;
+            font-language-override: 30px;
+        }
+        .login input{
+            width: 100%;
+            margin-bottom: 21px;
+            margin-top: 0px; 
+        }
+        .login input[type="text"], input[type="password"]{
+            border: 1px solid black;
+            border-bottom:  3px solid white;
+            background: transparent;
+            outline: red;
+            height: 30px;
+            font-size: 15px;
+        }
+        .login input[type="submit"]{
+            border: 1px solid black;
+            outline: none;
+            height: 40px;
+            color: red;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .login input[type="submit"]:hover{
+            cursor: pointer;
+            background: black;
+            transition: 0.3s;
+            
+        }
+        
+        .login a{
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 30px;
+            color: red;
+            transition: 0.2s;
+        }
+        .login a:hover{
+            transition: 0.2s;
+            color: black;
+            
+        }
+    </style>
+    
