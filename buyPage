@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buy Page</title>
+        <meta charset="UTF-8">
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div> 
+            Camisa<strong>R$ 20,00</strong><br/>
+            Quantidade: <input type="number" value="1" min="1" max="20" id="qtd1">
+            <button type="button" id="add" id="produto" onclick="AddIten('camisa',document.
+                        getElementById('qtd1').value, '20.00', 1)">Comprar</button>
+        <div/>
+        <br/>
+        <div> 
+            Calça <strong>R$ 100,00</strong><br/>
+            Quantidade
+            <input type="number" value="1" min="1" max="20" id="qtd2">
+            <button type="button" id="add" id="produto" onclick="AddIten('calca',document.
+                        getElementById('qtd2').value, '100.00', 2)">Comprar</button>
+        <div/>
+        <br/>
+        <div> 
+            Tênis<strong>R$ 89,00</strong><br/>
+            Quantidade
+            <input type="number" value="1" min="1" max="20" id="qtd3">
+            <button type="button" id="add" id="produto" onclick="AddIten('tenis',document.
+                        getElementById('qtd3').value, '89.00', 3)">Comprar</button>
+        <div/>
+
+        <p>
+            <a href="page2.html"> Visualizar seu carrinho </a>
+        </p>
+
+        <script>
+            function AddIten(produto, qtd, valor, posicao)
+            {
+                localStorage.setItem("produto" + posicao, produto);
+                localStorage.setItem("qtd" + posicao, qtd);
+                valor = valor * qtd;
+                localStorage.setItem("valor" + posicao, valor);
+                alert("Produto adicionado no carrinho de compras, favor conferir!")
+            } 
+        </script>
+    </body>
+</html>
